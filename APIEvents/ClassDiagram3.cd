@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="APIEvents.Models.Relaciones.UsuarioEvento">
+    <Position X="9.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Relaciones\UsuarioEvento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIEvents.Models.Categoria">
+    <Position X="5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAEAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Categoria.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIEvents.Models.Evento">
+    <Position X="3.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAASAgAAAAQAAAAAAQAAAAAAAAAAAAAAAAAQg=</HashCode>
+      <FileName>Models\Evento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="organizador" />
+      <Property Name="localizacion" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="categorias" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="APIEvents.Models.Locacion">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAIEAAAAAAg=</HashCode>
+      <FileName>Models\Locacion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="APIEvents.Models.Palco">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAgAAAAAAAAAAAAAAAAAAIgAAEAAAAAAAA=</HashCode>
+      <FileName>Models\Palco.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="administrador" />
+      <Property Name="evento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="APIEvents.Models.Usuario">
+    <Position X="6.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ASAAAgAAAAAEAACAAAAAAAAQAAAAAAAAAAAAAgAAAEA=</HashCode>
+      <FileName>Models\Usuario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="categorias" />
+      <Property Name="palco" />
+      <Property Name="usuarioEventos" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
