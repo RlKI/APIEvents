@@ -55,8 +55,15 @@ namespace APIEvents.Controllers
 
             RNEvento oRNEvento = new RNEvento();
             List<Evento> listaEventos = oRNEvento.getEventos();
+            return Content(System.Net.HttpStatusCode.OK, listaEventos, Configuration.Formatters.JsonFormatter);
+        }
 
-            //return Ok(xRespuesta.OuterXml);
+        [HttpGet()]
+        [Route("getEventosByCategoriasUsuario/{idUsuario}")]
+        public IHttpActionResult getEventosByCategoriasUsuario(int idUsuario)
+        {
+            RNEvento oRNEvento = new RNEvento();
+            List<Evento> listaEventos = oRNEvento.getEventosByCategoriasUsuario(idUsuario);
             return Content(System.Net.HttpStatusCode.OK, listaEventos, Configuration.Formatters.JsonFormatter);
         }
     }
